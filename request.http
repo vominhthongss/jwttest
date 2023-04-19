@@ -1,0 +1,39 @@
+###Register
+POST http://localhost:8000/api/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"noname01",
+    "email":"noname01@gmail.com",
+    "password":"1"
+}
+
+###Login
+POST http://localhost:8000/api/auth/login
+Content-Type: 'application/json'
+
+{
+    "email":"noname01@gmail.com",
+    "password":"1"
+}
+### Show user infomation
+POST http://localhost:8000/api/auth/me
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer [insert token]
+###
+GET http://localhost:8000/api/task
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer [insert token]
+
+###
+POST http://localhost:8000/api/task
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer [insert token]
+
+{
+    "content": "Code"
+}

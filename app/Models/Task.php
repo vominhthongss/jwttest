@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     use HasFactory;
-    protected $table = 'task';
-    protected $primaryKey = 'id';
+    // protected $table = 'task';
+    // protected $primaryKey = 'id';
     protected $fillable = [
         'content',
     ];

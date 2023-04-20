@@ -23,16 +23,16 @@ Accept: application/json
 Content-Type: application/json
 Authorization: bearer [insert token]
 ###
-GET http://localhost:8000/api/task
+GET http://localhost:8000/api/task/getalltask
 Accept: application/json
 Content-Type: application/json
-Authorization: bearer [insert token]
+Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODE5NTI2NjUsImV4cCI6MTY4MTk1NjI2NSwibmJmIjoxNjgxOTUyNjY1LCJqdGkiOiIxMnRXVjNUNXZMNFFSVksxIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.X_sqSr0FYDAyHyeddtnaQXzPqaN5eJ8bctFFZDZlrw8
 
 ###
-POST http://localhost:8000/api/task
+POST http://localhost:8000/api/task/addtask
 Accept: application/json
 Content-Type: application/json
-Authorization: bearer [insert token]
+Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2ODE5NTI2NjUsImV4cCI6MTY4MTk1NjI2NSwibmJmIjoxNjgxOTUyNjY1LCJqdGkiOiIxMnRXVjNUNXZMNFFSVksxIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.X_sqSr0FYDAyHyeddtnaQXzPqaN5eJ8bctFFZDZlrw8
 
 {
     "content": "Code"

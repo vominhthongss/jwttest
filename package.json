@@ -2,7 +2,11 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "mi": "php artisan migrate",
+        "se": "php artisan db:seed",
+        "model": "php artisan make:model",
+        "controller": "php artisan make:controller"
     },
     "devDependencies": {
         "axios": "^1.1.2",

@@ -27,8 +27,6 @@ Route::group([
     Route::post('logout', 'App\Http\Controllers\AuthController@logout');
     Route::post('refresh', 'App\Http\Controllers\AuthController@refresh');
     Route::post('me', 'App\Http\Controllers\AuthController@me');
-
-
 });
 Route::group([
 
@@ -37,9 +35,6 @@ Route::group([
 
 ], function ($router) {
 
-    Route::get('/', 'App\Http\Controllers\TaskController@getAllTask');
-    Route::post('/', 'App\Http\Controllers\TaskController@addTask');
-
+    Route::get('getalltask', 'App\Http\Controllers\TaskController@getAllTask');
+    Route::post('addtask', 'App\Http\Controllers\TaskController@addTask');
 });
-
-

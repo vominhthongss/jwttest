@@ -35,8 +35,8 @@ Route::group([
 
 ], function ($router) {
 
-    Route::get('getalltask', 'App\Http\Controllers\TaskController@getAllTask');
-    Route::post('addtask', 'App\Http\Controllers\TaskController@addTask');
-    Route::put('updatetask/{id}', 'App\Http\Controllers\TaskController@updateTask');
-    Route::delete('deletetask/{id}', 'App\Http\Controllers\TaskController@deleteTask');
+    Route::get('getalltask', 'App\Http\Controllers\TaskController@index');
+    Route::post('addtask', 'App\Http\Controllers\TaskController@store');
+    Route::put('updatetask/{id}', 'App\Http\Controllers\TaskController@update');
+    Route::delete('deletetask/{id}', 'App\Http\Controllers\TaskController@destroy');
 });

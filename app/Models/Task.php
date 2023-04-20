@@ -18,4 +18,15 @@ class Task extends Model
     {
         return self::select('*')->get();
     }
+
+    public function updateTask($content)
+    {
+        $this->content = $content;
+        $this->save();
+    }
+
+    public function deleteTask()
+    {
+        $this->delete();
+    }
 }

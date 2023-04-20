@@ -25,4 +25,19 @@ class TaskController extends Controller
         $task->save();
         return response()->json(['sucess' => 'item is added!'], 200);
     }
+
+    public function updateTask($id)
+    {
+        $data = request(['content']);
+        $task = Task::find($id);
+        $task->updateTask($data['content']);
+        return response()->json(['success' => 'item is updated!'], 200);
+    }
+
+    public function deleteTask($id)
+    {
+        $task = Task::find($id);
+        $task->deleteTask();
+        return response()->json(['success' => 'item is deleted!'], 200);
+    }
 }

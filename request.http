@@ -22,18 +22,33 @@ POST http://localhost:8000/api/auth/me
 Accept: application/json
 Content-Type: application/json
 Authorization: bearer [insert token]
-###
+### Get all task
 GET http://localhost:8000/api/task/getalltask
 Accept: application/json
 Content-Type: application/json
 Authorization: bearer [insert token]
 
-###
+### Add task
 POST http://localhost:8000/api/task/addtask
 Accept: application/json
 Content-Type: application/json
 Authorization: bearer [insert token]
 
 {
-    "content": "Code"
+    "content": "Code azaaa"
 }
+### Update task
+PUT http://localhost:8000/api/task/updatetask/1
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer [insert token]
+
+{
+    "content": "Code 2"
+}
+
+### Delete task
+DELETE  http://localhost:8000/api/task/deletetask/2
+Accept: application/json
+Content-Type: application/json
+Authorization: bearer [insert token]

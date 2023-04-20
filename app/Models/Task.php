@@ -14,19 +14,19 @@ class Task extends Model
         'content',
     ];
 
-    public static function getAllTask()
-    {
-        return self::select('*')->get();
-    }
+    // public static function getAllTask()
+    // {
+    //     return self::select('*')->get();
+    // }
 
-    public function updateTask($content)
-    {
-        $this->content = $content;
-        $this->save();
-    }
+    // public function updateTask($content)
+    // {
+    //     $this->content = $content;
+    //     $this->save();
+    // }
 
-    public function deleteTask()
-    {
-        $this->delete();
-    }
+    // public function deleteTask()
+    // {
+    //     $this->delete();
+    // }
 }
